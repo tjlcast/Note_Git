@@ -53,4 +53,8 @@ work_space	--add-->	|    stage  --commit--> master 	|
 	+ git branch dev
 	+ git checkout dev
 
++ git log --graph
+
++ git merge dev
+	+ dev分支的工作成果合并到当前分支
 
