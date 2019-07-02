@@ -21,7 +21,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 
 #### revert change
 + git reset --hard HEAD^ 
-	+ 切换HEAD指针
+	+ 切换HEAD指针{主要用于丢弃stage的change}
 + git checkout -- filename.txt
-	+ 
+	+ 可以丢弃工作区的修改
 
