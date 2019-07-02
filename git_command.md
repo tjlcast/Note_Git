@@ -9,6 +9,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git status
 + git add <...>
 + git commit <...>
++ git branch -a
 + git diff <...>
 	+ 不加参数即默认比较工作区与暂存区
 	+ --cached  [<path>...] 比较暂存区与最新本地版本库（本地库中最近一次commit的内容）
@@ -31,9 +32,16 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git remote add origin git@github.com:michaelliao/learngit.git
 	+ 关联到远端repo.
 
-+ git push -u origin master
++  git branch --set-upstream-to=origin/master feature-A
+	+ 把本地feature-A关联到origin/master.
+
++ git push -u origin feature
 	+ 参数u，把本地的master分支和远程的master分支关联起来,然后push分支. 
 
 + git branch -r
 	+  远端库的分支
+
++ git push origin --delete Chapater6  
+
+
 
