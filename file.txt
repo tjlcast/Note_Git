@@ -1,4 +1,5 @@
 this is a file. 
 
--- master. 
-
+Git tracks changes. 
+Git second changes. 
+git reset
