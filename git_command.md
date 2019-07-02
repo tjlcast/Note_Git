@@ -21,4 +21,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 
 #### revert change
 + git reset --hard HEAD^ 
+	+ 切换HEAD指针
++ git checkout -- filename.txt
+	+ 
 
