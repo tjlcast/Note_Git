@@ -9,7 +9,6 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git status
 + git add <...>
 + git commit <...>
-+ git branch -a
 + git diff <...>
 	+ 不加参数即默认比较工作区与暂存区
 	+ --cached  [<path>...] 比较暂存区与最新本地版本库（本地库中最近一次commit的内容）
@@ -39,9 +38,19 @@ work_space	--add-->	|    stage  --commit--> master 	|
 	+ 参数u，把本地的master分支和远程的master分支关联起来,然后push分支. 
 
 + git branch -r
-	+  远端库的分支
+	+ 远端库的分支
 
 + git push origin --delete Chapater6  
+	+ 删除远端分支
 
++ git clone
+
+#### branch manage and merge
++ git branch -a
+
++ git checkout -b dev
+	+ 创建并切换分支
+	+ git branch dev
+	+ git checkout dev
 
 
