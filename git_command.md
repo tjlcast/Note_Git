@@ -25,5 +25,15 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git checkout -- filename.txt
 	+ 切换到最近一次add或commit{主要用于丢弃工作区的修改}
 
-#### remote repo
+#### remote repository
+- generate isa_pub and send it to github. 
+
++ git remote add origin git@github.com:michaelliao/learngit.git
+	+ 关联到远端repo.
+
++ git push -u origin master
+	+ 参数u，把本地的master分支和远程的master分支关联起来,然后push分支. 
+
++ git branch -r
+	+  远端库的分支
 
