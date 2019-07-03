@@ -23,3 +23,6 @@ lg = !"git lg2"
  
 
 st = status 
+![avatar](https://github.com/tjlcast/Note_Git/blob/master/imgs/GetImageAttachment%20(1).png)
+![avatar](https://github.com/tjlcast/Note_Git/blob/master/imgs/GetImageAttachment%20(2).png)
+![avatar](https://github.com/tjlcast/Note_Git/blob/master/imgs/GetImageAttachment%20(3).png)
