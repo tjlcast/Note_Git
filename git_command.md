@@ -1,6 +1,7 @@
 git_command.md
 
 #### key words
+
 work_space	--add-->	|    stage  --commit--> master 	|
 						|			repository 			|
 
