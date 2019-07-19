@@ -81,9 +81,11 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + pre: you work is finished on your branch
 + git branch -vv	// for example you on branch:jialtang_paging_pr
 + git checkout -b jialtang_paging_pr_1 origin/develop	// the branch:origin/develop is you base.
+	- in other word `checkout -b [b1] [b2]` means the new branch b2 is based on b1.
 + git pull
 + git branch -vv
 + git merge jialtang_paging_pr --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
-+ git reset
++ git reset						// means you can see what haven you done on jialtang_paging_pr branch 
 + now you can see want you have done by "git status"
-+ git reset *.config 	// to back chang to work.
++ git reset *.config 	// 把本地环境的依赖删除
++ 
