@@ -85,7 +85,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git checkout -b jialtang_paging_pr_1 origin/develop	// the branch:origin/develop is you base.
 	- in other word `checkout -b [b1] [b2]` means the new branch b2 is based on b1.
 + git pull
-+ git branch -vv
++ git branch -vv					// 显示当前分支与远端分支的关系
 + git merge jialtang_paging_pr --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
 + git reset						// means you can see what haven you done on jialtang_paging_pr branch 
 + now you can see want you have done by "git status"
