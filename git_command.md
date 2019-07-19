@@ -88,4 +88,4 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git reset						// means you can see what haven you done on jialtang_paging_pr branch 
 + now you can see want you have done by "git status"
 + git reset *.config 	// 把本地环境的依赖删除
-+ 
++ git commit -m "The function of paging locations table"// 只把暂存取的内容提交
