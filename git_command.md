@@ -68,3 +68,15 @@ work_space	--add-->	|    stage  --commit--> master 	|
 	- remove and apply the item to current space
 + git stash apply
 	- apply the item to current space
+	
+#### example
+
+##### work on dev
++ pre: you work is finished on your branch
++ git branch -vv	// for example you on branch:jialtang_paging_pr
++ git checkout -b jialtang_paging_pr_1 origin/develop	// the branch:origin/develop is you base.
++ git pull
++ git branch -vv
++ git merge jialtang_paging_pr --no-commit --no-ff
++ git reset
++ now you can see want you have done by "git status"
