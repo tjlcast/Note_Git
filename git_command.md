@@ -69,6 +69,12 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git stash apply
 	- apply the item to current space
 	
+#### work space
++ git clean -n
+	- remind you of the files will deleted
++ git clean -f 
+	- forece to delete the files
+	
 #### example
 
 ##### work on dev
@@ -77,7 +83,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git checkout -b jialtang_paging_pr_1 origin/develop	// the branch:origin/develop is you base.
 + git pull
 + git branch -vv
-+ git merge jialtang_paging_pr --no-commit --no-ff
++ git merge jialtang_paging_pr --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
 + git reset
 + now you can see want you have done by "git status"
 + git reset *.config 	// to back chang to work.
