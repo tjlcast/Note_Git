@@ -80,3 +80,4 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git merge jialtang_paging_pr --no-commit --no-ff
 + git reset
 + now you can see want you have done by "git status"
++ git reset *.config 	// to back chang to work.
