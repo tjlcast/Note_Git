@@ -59,3 +59,12 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git merge dev
 	+ dev分支的工作成果合并到当前分支
 
+#### save the work space
++ git stash 
+	- save the work space
++ git stash list 
+	- list the items have been saved
++ git stash pop
+	- remove and apply the item to current space
++ git stash apply
+	- apply the item to current space
