@@ -73,7 +73,7 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git clean -n
 	- remind you of the files will deleted
 + git clean -f 
-	- forece to delete the files
+	- forece to delete the files **(untracked files)**
 	
 #### example
 
@@ -87,5 +87,6 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git merge jialtang_paging_pr --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
 + git reset						// means you can see what haven you done on jialtang_paging_pr branch 
 + now you can see want you have done by "git status"
-+ git reset *.config 	// 把本地环境的依赖删除
++ git reset *.config 					// 把本地环境的依赖删除
 + git commit -m "The function of paging locations table"// 只把暂存取的内容提交
++ Now clean current branch via `git checkout -- .`/`git reset`/`git clean`
