@@ -80,15 +80,16 @@ work_space	--add-->	|    stage  --commit--> master 	|
 #### example
 
 ##### work on dev
-+ pre: you work is finished on your branch
-+ git branch -vv	// for example you on branch:jialtang_paging_pr
-+ git checkout -b jialtang_paging_pr_1 origin/develop	// the branch:origin/develop is you base.
++ pre: you work is finished on your branch(jialtang_paging_local)
++ git branch -vv	// for example you on branch:jialtang_paging_local
++ git checkout -b jialtang_paging_pr origin/develop	// the branch:origin/develop is you base.
 	- in other word `checkout -b [b1] [b2]` means the new branch b2 is based on b1.
 + git pull
 + git branch -vv					// 显示当前分支与远端分支的关系
-+ git merge jialtang_paging_pr --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
++ git merge jialtang_paging_local --no-commit --no-ff	// merge but not commit so you can see stash and work space diff
 + git reset						// means you can see what haven you done on jialtang_paging_pr branch 
 + now you can see want you have done by "git status"
 + git reset *.config 					// 把本地环境的依赖删除
 + git commit -m "The function of paging locations table"// 只把暂存取的内容提交
 + Now clean current branch via `git checkout -- .`/`git reset`/`git clean`
++ git push origin jialtang_paging_pr			// push your code
