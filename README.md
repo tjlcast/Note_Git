@@ -93,3 +93,20 @@ work_space	--add-->	|    stage  --commit--> master 	|
 + git commit -m "The function of paging locations table"// 只把暂存取的内容提交
 + Now clean current branch via `git checkout -- .`/`git reset`/`git clean`
 + git push origin jialtang_paging_pr			// push your code
+
+#### solve conflicts
++ 方法一
+```
+git merge --abort
+git reset --merge
+git pull
+```
+代表意思分别为：中止合并-拉取的代码会回滚 ；重新进行合并；重新拉取代码，这种情况保留本地更改。
+
++ 方法二
+``` 
+git fetch --all
+git reset --hard origin/master
+git fetch
+```
+代表意思分别为：从远程获取代码到本地-不会合并；舍弃本地，远端代码覆盖本地代码，这时本地分支的HEAD会被重置成远程分支的HEAD。慎重使用方法二，因为如果没有备份代码会造成代码丢失。养成备份的好习惯是多么重要。
